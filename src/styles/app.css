@@ -1,18 +1,9 @@
-.App {
-  text-align: center; }
-
-.App-logo {
-  height: 40vmin; }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: red; }
-
-.App-link {
-  color: #09d3ac; }
+body {
+  background: #288ae6;
+  background: -moz-radial-gradient(center, ellipse cover, #288ae6 0%, #186dcd 57%, #186dcd 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #288ae6), color-stop(57%, #186dcd), color-stop(100%, #186dcd));
+  background: -webkit-radial-gradient(center, ellipse cover, #288ae6 0%, #186dcd 57%, #186dcd 100%);
+  background: -o-radial-gradient(center, ellipse cover, #288ae6 0%, #186dcd 57%, #186dcd 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #288ae6 0%, #186dcd 57%, #186dcd 100%);
+  background: radial-gradient(ellipse at center, #288ae6 0%, #186dcd 57%, #186dcd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#288ae6', endColorstr='#186dcd', GradientType=1 ); }
