@@ -4,9 +4,9 @@ import useClass from './../hooks/add-class-body';
 import {Container, Col, Card, CardBody, Form, Input, InputGroup, Row, Button} from 'reactstrap'; 
 
 
-const Login = (props) => {
+const Register = (props) => {
     useClass('bg-blue');
-    const handleLogin = () => {
+    const handleRegister = () => {
         alert('Requisição Http');
     }
     return (
@@ -17,8 +17,10 @@ const Login = (props) => {
                         <Card>
                             <CardBody>
                                 <Form>
-                                    <h2>Login</h2>
-                                    <p>Não possui conta? <Link to="/register">Clique aqui para se Registrar</Link></p>
+                                    <h2>Novo Cadastro</h2>
+                                    <InputGroup className="mb-3">
+                                        <Input type="text" placeholder="Insira o seu Nome Completo"></Input>
+                                    </InputGroup>
                                     <InputGroup className="mb-3">
                                         <Input type="email" placeholder="Insira o E-mail"></Input>
                                     </InputGroup>
@@ -26,8 +28,8 @@ const Login = (props) => {
                                         <Input type="password" placeholder="Insira a Senha"></Input>
                                     </InputGroup>
                                     <InputGroup className="mb-3">
-                                        <Button outline color="primary" onClick={handleLogin}>Logar</Button>
-                                        <Link to="/forgot">
+                                        <Button outline color="primary" onClick={handleRegister}>Registrar</Button>
+                                        <Link to="forgot">
                                             <Button color="link">Esqueceu a Senha?</Button>
                                         </Link>
                                     </InputGroup>
@@ -41,4 +43,4 @@ const Login = (props) => {
     )
 }
 
-export default Login;
+export default Register;
